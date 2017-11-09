@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Tic Tac Toe</title>
+    <!--Linkeamos nuestro archivo externo main.css para que pueda dar estilo a nuestro documento html-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <div class="title">
+        <span class="green">Tic</span>
+        <span class="yellow">Tac</span>
+        <span class="red">Toc</span>
+    </div>
+    
+    <div class="jugador">
+        <p>Jugador X:</p>
+        <p>Jugador O:</p>
+    </div>
+
     <!--Creamos una tabla con 3 filas y 3 columnas-->
     <table class="board board-js">
         <tbody>
@@ -27,7 +40,7 @@
         </tbody>
     </table>
     <!--Creamos un boton para resetear el juego-->
-    <input type="reset" value="RESET">
+    <input type="button" value="PLAY AGAIN">
     <!--Creamos dos inputs donde se observa el resultado final del juego (ganador o empates)-->
 
     <!--Linkeamos nuestro archivo externo app.js-->
