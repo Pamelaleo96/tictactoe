@@ -7,36 +7,38 @@
     font-family: cursive;
 }
 
-/*Añadiendo estilos a mi titulo Tic Tac Toe*/
-div .title {
+/*STYLE FOR THE HEADER AND TITLE "Tic Tac Toe"*/
+header {
     margin-top: 40px;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
 }
-
+/*Añadiendo color para la letra Tic*/
 .green{
-    color: #CCFF00;
+    color: rgb(141, 173, 13);
 }
-
+/*Añadiendo color para la letra Tac*/
 .yellow{
     color: #FFFF00;
 }
-
+/*Añadiendo color para la letra Toc*/
 .red{
     color: #FF0000;
 }
 
-/*Añadiendo estilos al div que contiene los puntajes de cada jugador*/
-div {
-    margin-top: 30px;
-    color: gray;
-    font-size: 2rem;
+/*STYLE FOR THE MESSAGE WINNER OR TIE*/
+#message {
+    text-align: center;
+    border: 4px dotted #669900;
+    margin: 40px 650px;
+    height: 50px;
+    color: #CCFF33;
     font-weight: bold;
 }
 
-/*Llamamos a nuestra tabla creada en html*/
+/*STYLE FOR THE TABLE AND CELLS*/
 .board {
-    margin: 100px auto 0; /*centramos la tabla*/
+    margin: 50px auto 0; /*centramos la tabla*/
     border-collapse: collapse; /*Junta todos los bordes de la celda*/
 }
 
@@ -46,23 +48,28 @@ div {
     height: 100px;
     border: 1px solid white;
     color: white;
-    /*text-align: center;*/
     font-size: 70px;
     font-weight: bold;
 }
 
 /*Aplicamos hover(cuando pasa por encima de la celda cambie de color (hace alucion a que va a seleccionar esa celda) para cada celda de la tabla*/
 .board td:hover {
-    background-color: #99CCCC;
+    background-color: #CDDC39;
 }
 
-/*Aplicamos estilo al boton PLAY AGAIN*/
-input {
+/*STYLE FOR THE BUTTON "PLAY AGAIN"*/
+button {
     margin-top: 30px;
     color: white;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
     background-color: #CC0000;
     border: none;
     padding: 20px;
     border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #990033;
 }
